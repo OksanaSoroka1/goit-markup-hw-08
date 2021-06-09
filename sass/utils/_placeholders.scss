@@ -1,0 +1,15 @@
+//формули для вичислення розмірів елементів сіток
+//team-section__list-item, feature-section__list-item
+%four-in-row-list-item {
+  flex-basis: calc(100% / 4 - #{$card-set-gap});
+}
+
+//work-section__list-item, projects-list__item
+%three-in-row-list-item {
+  flex-basis: calc(100% / 3 - #{$card-set-gap});
+}
+
+//clients-section__list-item
+%six-in-row-list-item {
+  flex-basis: calc(100% / 6 - #{$card-set-gap});
+}

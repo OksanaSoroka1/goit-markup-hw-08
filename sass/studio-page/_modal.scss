@@ -1,0 +1,181 @@
+//Оформлення модального вікна
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  min-height: 581px;
+  min-width: 528px;
+  padding: 40px;
+
+  background: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: currentColor;
+
+  background-color: $primary-bcg-color;
+  border-radius: 50%;
+  border: $close-button-border;
+  cursor: pointer;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $accent-color;
+  }
+}
+
+//Оформлення форми в модалці
+.modal__form,
+.form-request__thumb,
+.form-request__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-request__title {
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: $title-text-color;
+}
+
+.form-request__field {
+  margin-bottom: 10px;
+}
+
+.form-request__label,
+.form-request__textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form-request__label {
+  margin-bottom: 4px;
+}
+
+.form-request__thumb {
+  margin-bottom: 20px;
+}
+
+.form-request__input {
+  height: 40px;
+  width: 100%;
+  padding: 12px 42px;
+}
+
+.form-request__input-area {
+  border: $modal-form-field-input-border;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
+}
+
+.form-request__input-thumb {
+  position: relative;
+}
+
+.form-request__input-icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  fill: $close-button-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form-request__input-area:focus + & {
+    fill: $accent-color;
+  }
+}
+
+.form-request__textarea {
+  resize: none;
+
+  height: 120px;
+  padding: 12px 16px;
+  overflow: auto;
+
+  &::placeholder {
+    color: $modal-placeholder-text-color;
+  }
+}
+
+.form-request__checkbox-thumb {
+  padding-left: 12px;
+  margin-bottom: 30px;
+}
+
+.form-request__checkbox-lable {
+  display: flex;
+  align-items: center;
+  line-height: 1.71;
+  cursor: pointer;
+}
+.form-request__checkbox-link {
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+.form-request__checkbox-icon-thumb {
+  position: relative;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+  fill: transparent;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form-request__checkbox:focus ~ & {
+    border-color: $accent-color;
+  }
+
+  .form-request__checkbox:checked ~ & {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    fill: $primary-white-color;
+  }
+}
+
+.form-request__checkbox-icon {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+.form-request__button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  align-self: center;
+}

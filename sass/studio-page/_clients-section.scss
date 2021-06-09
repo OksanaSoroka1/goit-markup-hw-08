@@ -1,0 +1,26 @@
+//Оформлення секції Постійні клієнти
+
+.clients-section__list-item {
+  @extend %six-in-row-list-item;
+}
+
+.clients-section__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  width: 100%;
+  border: $clients-list-border;
+  border-radius: 4px;
+  fill: $icon-fill;
+
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-section__link:hover,
+.clients-section__link:focus {
+  fill: $accent-color;
+  border-color: $accent-color;
+}

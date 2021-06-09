@@ -1,0 +1,40 @@
+//Скидає стилі
+//Скидає marging, padding
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+//Скидає підкреслювання ссилок
+a {
+  text-decoration: none;
+}
+
+//Скидає декорацію списків
+ul {
+  list-style: none;
+}
+
+//загальні стилі для сайту
+//Задає глобальні стилі для body
+body {
+  background-color: $primary-bcg-color;
+  font-family: $main-font-family;
+  font-size: 14px;
+  color: $primary-text-color;
+  letter-spacing: 0.03em;
+}
+
+//Оптимізує img
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

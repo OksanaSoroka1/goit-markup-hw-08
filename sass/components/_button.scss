@@ -1,0 +1,32 @@
+//Оформлення кнопок загальне
+.button {
+  border: transparent;
+  border-radius: 4px;
+
+  font-family: inherit;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+//Оформлення кнопки в герої і в модальному вікні
+.button-primary {
+  width: 200px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  background-color: $accent-color;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+
+  &:hover,
+  &:focus {
+    background-color: $studio-button-hover;
+  }
+}

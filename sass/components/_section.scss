@@ -1,0 +1,29 @@
+//Додає верхній і нижній падінги в секціях основного контенту
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+//Оформлення заголовків
+.section__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $title-text-color;
+}
+
+//Створення сітки для feature-section і team-section, work-section
+
+.section__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * #{$card-set-gap});
+  margin-top: calc(-1 * #{$card-set-gap});
+}
+
+.section__list-item {
+  margin-left: $card-set-gap;
+  margin-top: $card-set-gap;
+}

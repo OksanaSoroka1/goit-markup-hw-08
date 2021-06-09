@@ -1,0 +1,29 @@
+//Загальне оформлення ссилок на соцмережі
+.accounts-list {
+  display: flex;
+}
+
+.accounts-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  fill: $icon-fill;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $primary-white-color;
+  }
+}
+
+.accounts-list__item:not(:first-child) {
+  margin-left: 10px;
+}

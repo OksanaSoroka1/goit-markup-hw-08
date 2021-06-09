@@ -1,0 +1,30 @@
+//Оформлення секції "Особливості"
+.feature-section {
+  padding-bottom: 47px;
+}
+
+.feature-section__list-item {
+  @extend %four-in-row-list-item;
+}
+
+.feature-section__list-title {
+  font-size: inherit;
+  line-height: 1.14;
+  margin-bottom: 10px;
+  color: $title-text-color;
+  text-transform: uppercase;
+}
+
+.feature-section__list-text {
+  line-height: 1.71;
+}
+
+.feature-section__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: $secondary-bgc-color;
+}

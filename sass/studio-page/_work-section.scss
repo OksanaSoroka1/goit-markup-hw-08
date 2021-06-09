@@ -1,0 +1,34 @@
+//Оформлення секції work-section
+.work-section {
+  padding-top: 47px;
+}
+
+.work-section__list-item {
+  @extend %three-in-row-list-item;
+}
+
+.work-section__list-item-thumb {
+  position: relative;
+}
+
+.work-section__list-item-title-thumb {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $work-list-item-title-bcg;
+}
+
+.work-section__list-item-title {
+  font-size: inherit;
+  line-height: 0.875;
+  color: $primary-white-color;
+  text-align: center;
+  text-transform: uppercase;
+}
