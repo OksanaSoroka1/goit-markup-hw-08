@@ -4,6 +4,16 @@
 }
 
 .feature-section__list-item {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: $card-set-gap;
+    }
+  }
+
+  //768-1199px
+  @extend %two-in-row-list-item;
+
+  //1200px
   @extend %four-in-row-list-item;
 }
 
@@ -13,6 +23,10 @@
   margin-bottom: 10px;
   color: $title-text-color;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .feature-section__list-text {

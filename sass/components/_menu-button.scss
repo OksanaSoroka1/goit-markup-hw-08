@@ -1,0 +1,30 @@
+.menu-button {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  fill: $close-button-color;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}

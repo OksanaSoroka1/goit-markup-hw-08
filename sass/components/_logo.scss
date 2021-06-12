@@ -1,7 +1,7 @@
 //Оформлення логотипу загальне
 .logo {
   font-family: $secondary-font-family;
-  font-size: 26px;
+
   line-height: 1.19;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -9,6 +9,13 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
   }
 }
 

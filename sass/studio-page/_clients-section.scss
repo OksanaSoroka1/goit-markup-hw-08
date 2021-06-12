@@ -1,6 +1,25 @@
 //Оформлення секції Постійні клієнти
 
+.clients-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * #{$card-set-gap});
+  margin-top: calc(-1 * #{$card-set-gap});
+}
+
 .clients-section__list-item {
+  margin-left: $card-set-gap;
+  margin-top: $card-set-gap;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: calc(100% / 2 - #{$card-set-gap});
+  }
+
+  //768-1199px
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc(100% / 3 - #{$card-set-gap});
+  }
+  //1200px
   @extend %six-in-row-list-item;
 }
 

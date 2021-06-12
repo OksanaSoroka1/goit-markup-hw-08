@@ -8,8 +8,43 @@
 }
 
 .page-footer__content {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.page-footer__content-thumb {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+
+.page-footer__contacts {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .page-footer__logo {
@@ -38,7 +73,13 @@ address {
 }
 
 .page-footer__accounts {
-  margin-left: 70px;
+}
+
+.page-footer__accounts-list {
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .page-footer__accounts-link {
@@ -53,10 +94,22 @@ address {
   color: $title-text-color;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .page-footer__form {
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .page-footer__logo,
@@ -67,12 +120,14 @@ address {
 }
 
 .form-subscription__thumb {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .form-subscription__input {
   height: 50px;
-  width: 358px;
+
   padding: 15px 16px;
 
   color: $primary-white-color;
@@ -85,6 +140,18 @@ address {
     line-height: 1.25;
     color: $footer-main-text-color;
   }
+
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .form-subscription__button {
@@ -92,6 +159,11 @@ address {
   justify-content: center;
   align-items: center;
   margin-left: 12px;
+
+  @media screen and (max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .form-subscription__icon {
   margin-left: 10px;

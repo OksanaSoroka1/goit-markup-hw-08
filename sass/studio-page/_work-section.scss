@@ -1,5 +1,9 @@
 //Оформлення секції work-section
 .work-section {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
   padding-top: 47px;
 }
 

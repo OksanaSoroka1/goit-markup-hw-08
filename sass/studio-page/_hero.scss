@@ -1,29 +1,80 @@
 //Оформлення головної секції
 .hero {
-  max-width: 1600px;
-  height: 600px;
   margin-right: auto;
   margin-left: auto;
   background-color: $dark-background-color;
 
-  background-image: linear-gradient($hero-bcg-gradient), url('../img/hero-bcg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media screen and (max-width: 767px) {
+    max-width: 767px;
+
+    background-image: linear-gradient($hero-bcg-gradient), url('../img/hero-bcg-480.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient($hero-bcg-gradient), url('../img/hero-bcg-960.jpg');
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 1199px;
+
+    background-image: linear-gradient($hero-bcg-gradient), url('../img/hero-bcg-768.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient($hero-bcg-gradient), url('../img/hero-bcg-1536.jpg');
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    height: 400px;
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient($hero-bcg-gradient), url('../img/hero-bcg-1600.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient($hero-bcg-gradient), url('../img/hero-bcg-3200.jpg');
+    }
+  }
 }
 
 .hero__content {
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
 }
 
 .hero__title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
+
   line-height: 1.36;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: $primary-white-color;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }

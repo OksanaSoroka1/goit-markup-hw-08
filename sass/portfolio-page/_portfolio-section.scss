@@ -3,12 +3,33 @@
 //Оформлення кнопок-фільтрів
 .filters-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+
+  flex-wrap: wrap;
+  margin-bottom: -15px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
-.filters-list__item:not(:last-child) {
-  margin-right: 8px;
+.filters-list__item {
+  margin-bottom: 15px;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .filters-list__button {
@@ -32,6 +53,20 @@
 /*Оформення списку проектів*/
 
 .projects-list__item {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: $card-set-gap;
+    }
+  }
+
+  //768-1199px
+  @extend %two-in-row-list-item;
+
+  //1200px
   @extend %three-in-row-list-item;
 }
 
