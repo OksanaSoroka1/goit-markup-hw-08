@@ -1326,7 +1326,7 @@ address {
 .form-request__checkbox:checked ~ .form-request__checkbox-icon-thumb {
   border-color: #2196f3;
   background-color: #2196f3;
-  background-image: url(../../img/icon-check.svg);
+  background-image: url(../img/icon-check.svg);
   background-repeat: no-repeat;
   background-size: contain;
   -moz-background-origin: border-box;
