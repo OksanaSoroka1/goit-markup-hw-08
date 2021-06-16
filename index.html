@@ -16,13 +16,18 @@
     <header class="page-header">
       <div class="page-header__content container">
         <a class="logo site-nav__logo" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
-        <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <button class=" menu-button" type="button"  data-menu-open>
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
             <use class="icon-menu" href="./img/icons.svg#icon-menu_40px"></use>
-            <use class="icon-cross" href="./img/icons.svg#icon-close_40px"></use>
+            
           </svg>
         </button>
         <div class="menu-container" id="menu-container" data-menu>
+          <button class="menu-button menu-button--close" type="button"   data-menu-close>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-cross" href="./img/icons.svg#icon-close_40px"></use>
+            </svg>
+          </button>
           <nav class="site-nav">
             <ul class="site-nav__list">
               <li class="site-nav__list-item">
@@ -160,9 +165,11 @@
         <ul class="section__list team-section__list">
           <li class="section__list-item team-section__list-item">
             <img class="team-section__picture"
-            srcset="./img/team-card1-270.jpg 1x, ./img/team-card1-270@2x.jpg 2x,
-             ./img/team-card1-354.jpg 1x, ./img/team-card1-354@2x.jpg 2x"
-             src="./img/team-card1-270.jpg" alt="Игорь Демьяненко" width="270" >
+            srcset="./img/team-card1-270.jpg 270w, ./img/team-card1-270@2x.jpg 540w,
+             ./img/team-card1-354.jpg 354w, ./img/team-card1-354@2x.jpg 708w, 
+             ./img/team-card1-450.jpg 450w, ./img/team-card1-450@2x.jpg 900w"
+             src="./img/team-card1-270.jpg" alt="Игорь Демьяненко" 
+             sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" >
             <div class="team-section__list-item-content">
               <h3 class="team-section__list-item-title">Игорь Демьяненко</h3>
               <p class="team-section__list-item-text" lang="en">Product Designer</p>
@@ -192,8 +199,11 @@
           </li>
           <li class="section__list-item team-section__list-item">
             <img class="team-section__picture"
-            srcset="./img/team-card2-270.jpg 1x, ./img/team-card2-270@2x.jpg 2x" 
-            src="img/team-card2-270.jpg" alt="Ольга Репина" width="270">
+            srcset="./img/team-card2-270.jpg 270w, ./img/team-card2-270@2x.jpg 540w,
+            ./img/team-card2-354.jpg 354w, ./img/team-card2-354@2x.jpg 708w, 
+             ./img/team-card2-450.jpg 450w, ./img/team-card2-450@2x.jpg 900w" 
+            src="img/team-card2-270.jpg" alt="Ольга Репина" 
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
             <div class="team-section__list-item-content">
               <h3 class="team-section__list-item-title">Ольга Репина</h3>
               <p class="team-section__list-item-text" lang="en">Frontend Developer</p>
@@ -223,8 +233,11 @@
           </li>
           <li class="section__list-item team-section__list-item">
             <img class="team-section__picture"
-            srcset="./img/team-card3-270.jpg 1x, ./img/team-card3-270@2x.jpg 2x" 
-            src="img/team-card3-270.jpg" alt="Николай Тарасов" width="270">
+            srcset="./img/team-card3-270.jpg 270w, ./img/team-card3-270@2x.jpg 540w,
+            ./img/team-card3-354.jpg 354w, ./img/team-card3-354@2x.jpg 708w, 
+             ./img/team-card3-450.jpg 450w, ./img/team-card3-450@2x.jpg 900w" 
+            src="img/team-card3-270.jpg" alt="Николай Тарасов" 
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
             <div class="team-section__list-item-content">
               <h3 class="team-section__list-item-title">Николай Тарасов</h3>
               <p class="team-section__list-item-text" lang="en">Marketing</p>
@@ -254,8 +267,11 @@
           </li>
           <li class="section__list-item team-section__list-item">
             <img class="team-section__picture"
-            srcset="./img/team-card4-270.jpg 1x, ./img/team-card4-270@2x.jpg 2x"
-             src="img/team-card4-270.jpg" alt="Михаил Ермаков" width="270">
+            srcset="./img/team-card4-270.jpg 270w, ./img/team-card4-270@2x.jpg 540w,
+            ./img/team-card4-354.jpg 354w, ./img/team-card4-354@2x.jpg 708w, 
+             ./img/team-card4-450.jpg 450w, ./img/team-card4-450@2x.jpg 900w"
+             src="img/team-card4-270.jpg" alt="Михаил Ермаков" 
+             sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
             <div class="team-section__list-item-content">
               <h3 class="team-section__list-item-title">Михаил Ермаков</h3>
               <p class="team-section__list-item-text" lang="en">UI Designer</p>

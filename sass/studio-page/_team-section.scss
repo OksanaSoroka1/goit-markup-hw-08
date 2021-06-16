@@ -23,12 +23,6 @@
   @extend %two-in-row-list-item;
 }
 
-.team-section__picture {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 354px;
-  }
-}
-
 .team-section__list-item-content {
   padding-top: 30px;
 

@@ -16,13 +16,18 @@
 <header class="page-header">
 	<div class="page-header__content container">
 		<a class="logo site-nav__logo" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
-		<button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+		<button class=" menu-button" type="button" data-menu-open>
 			<svg width="40" height="40" aria-label="Переключатель мобильного меню">
 				<use class="icon-menu" href="./img/icons.svg#icon-menu_40px"></use>
-				<use class="icon-cross" href="./img/icons.svg#icon-close_40px"></use>
+
 			</svg>
 		</button>
 		<div class="menu-container" id="menu-container" data-menu>
+			<button class="menu-button menu-button--close" type="button" data-menu-close>
+				<svg width="40" height="40" aria-label="Переключатель мобильного меню">
+					<use class="icon-cross" href="./img/icons.svg#icon-close_40px"></use>
+				</svg>
+			</button>
 			<nav class="site-nav">
 				<ul class="site-nav__list">
 					<li class="site-nav__list-item">
@@ -85,7 +90,12 @@
 									Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
 									шпионажа и атак на защищённые сервера конкурентов.
 								</p>
-								<img src="img/project1.jpg" alt="Веб-сайт Технокряк" width="370">
+								<img
+								srcset="./img/project1-370.jpg 370w, ./img/project1-370@2x.jpg 740w,
+								./img/project1-354.jpg 354w, ./img/project1-354@2x.jpg 708w, 
+								./img/project1-450.jpg 450w, ./img/project1-450@2x.jpg 900w"
+								 src="img/project1-370.jpg" alt="Веб-сайт Технокряк" 
+								sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
 							</div>
 							<div class="projects-list__content">
 								<h3 class="projects-list__title">Технокряк</h3>
@@ -100,7 +110,12 @@
 									Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
 									шпионажа и атак на защищённые сервера конкурентов.
 								</p>
-								<img src="img/project2.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+								<img
+								srcset="./img/project2-370.jpg 370w, ./img/project2-370@2x.jpg 740w,
+								./img/project2-354.jpg 354w, ./img/project2-354@2x.jpg 708w, 
+								./img/project2-450.jpg 450w, ./img/project2-450@2x.jpg 900w"
+								 src="img/project2-370.jpg" alt="Постер New Orlean vs Golden Star" 
+								 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
 							</div>
 							<div class="projects-list__content">
 								<h3 class="projects-list__title">Постер New Orlean vs Golden Star</h3>
@@ -115,7 +130,12 @@
 									Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
 									шпионажа и атак на защищённые сервера конкурентов.
 								</p>
-								<img src="img/project3.jpg" alt="Приложение Ресторан Seafood" width="370">
+								<img
+								srcset="./img/project3-370.jpg 370w, ./img/project3-370@2x.jpg 740w,
+								./img/project3-354.jpg 354w, ./img/project3-354@2x.jpg 708w, 
+								./img/project3-450.jpg 450w, ./img/project3-450@2x.jpg 900w"
+								 src="img/project3-370.jpg" alt="Приложение Ресторан Seafood" 
+								 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
 							</div>
 							<div class="projects-list__content">
 								<h3 class="projects-list__title">Ресторан Seafood</h3>
@@ -130,7 +150,12 @@
 									Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
 									шпионажа и атак на защищённые сервера конкурентов.
 								</p>
-								<img src="img/project4.jpg" alt="Проект Prime" width="370">
+								<img
+								srcset="./img/project4-370.jpg 370w, ./img/project4-370@2x.jpg 740w,
+								./img/project4-354.jpg 354w, ./img/project4-354@2x.jpg 708w, 
+								./img/project4-450.jpg 450w, ./img/project4-450@2x.jpg 900w"
+								 src="img/project4-370.jpg" alt="Проект Prime"
+								 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
 							</div>
 							<div class="projects-list__content">
 								<h3 class="projects-list__title">Проект Prime</h3>
@@ -145,7 +170,12 @@
 									Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
 									шпионажа и атак на защищённые сервера конкурентов.
 								</p>
-								<img src="img/project5.jpg" alt="Проект Boxes" width="370">
+								<img
+								srcset="./img/project5-370.jpg 370w, ./img/project5-370@2x.jpg 740w,
+								./img/project5-354.jpg 354w, ./img/project5-354@2x.jpg 708w, 
+								./img/project5-450.jpg 450w, ./img/project5-450@2x.jpg 900w"
+								 src="img/project5-370.jpg" alt="Проект Boxes" 
+								 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
 							</div>
 							<div class="projects-list__content">
 								<h3 class="projects-list__title">Проект Boxes</h3>
@@ -160,7 +190,12 @@
 									Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
 									шпионажа и атак на защищённые сервера конкурентов.
 								</p>
-								<img src="img/project6.jpg" alt="Веб-сайт Inspiration has no Borders" width="370">
+								<img
+								srcset="./img/project6-370.jpg 370w, ./img/project6-370@2x.jpg 740w,
+								./img/project6-354.jpg 354w, ./img/project6-354@2x.jpg 708w, 
+								./img/project6-450.jpg 450w, ./img/project6-450@2x.jpg 900w"
+								 src="img/project6-370.jpg" alt="Веб-сайт Inspiration has no Borders" 
+								 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
 							</div>
 							<div class="projects-list__content">
 								<h3 class="projects-list__title">Inspiration has no Borders</h3>
@@ -175,7 +210,12 @@
 									Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
 									шпионажа и атак на защищённые сервера конкурентов.
 								</p>
-								<img src="img/project7.jpg" alt="Издание Limited Edition" width="370">
+								<img
+								srcset="./img/project7-370.jpg 370w, ./img/project7-370@2x.jpg 740w,
+								./img/project7-354.jpg 354w, ./img/project7-354@2x.jpg 708w, 
+								./img/project7-450.jpg 450w, ./img/project7-450@2x.jpg 900w"
+								 src="img/project7-370.jpg" alt="Издание Limited Edition" 
+								 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
 							</div>
 							<div class="projects-list__content">
 								<h3 class="projects-list__title">Издание Limited Edition</h3>
@@ -190,7 +230,12 @@
 									Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
 									шпионажа и атак на защищённые сервера конкурентов.
 								</p>
-								<img src="img/project8.jpg" alt="Проект LAB" width="370">
+								<img
+								srcset="./img/project8-370.jpg 370w, ./img/project8-370@2x.jpg 740w,
+								./img/project8-354.jpg 354w, ./img/project8-354@2x.jpg 708w, 
+								./img/project8-450.jpg 450w, ./img/project8-450@2x.jpg 900w"
+								 src="img/project8-370.jpg" alt="Проект LAB" 
+								 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
 							</div>
 							<div class="projects-list__content">
 								<h3 class="projects-list__title">Проект LAB</h3>
@@ -205,7 +250,12 @@
 									Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
 									шпионажа и атак на защищённые сервера конкурентов.
 								</p>
-								<img src="img/project9.jpg" alt="Приложение Growing Business" width="370">
+								<img
+								srcset="./img/project9-370.jpg 370w, ./img/project9-370@2x.jpg 740w,
+								./img/project9-354.jpg 354w, ./img/project9-354@2x.jpg 708w, 
+								./img/project9-450.jpg 450w, ./img/project9-450@2x.jpg 900w"
+								 src="img/project9-370.jpg" alt="Приложение Growing Business"
+								 sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" >
 							</div>
 							<div class="projects-list__content">
 								<h3 class="projects-list__title">Growing Business</h3>

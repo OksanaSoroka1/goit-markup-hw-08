@@ -58,7 +58,6 @@ img {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  outline: 1px solid tomato;
 }
 
 @media screen and (max-width: 767px) {
@@ -101,16 +100,10 @@ img {
   }
 }
 
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
+.menu-button--close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .logo {
@@ -335,11 +328,11 @@ img {
     display: none;
     position: absolute;
     z-index: 10;
-    top: 48px;
+    top: 0;
     left: 0;
     width: 100%;
     background-color: #ffffff;
-    padding: 0 40px 48px;
+    padding: 48px 40px;
   }
   .menu-container.is-open {
     display: block;
@@ -453,7 +446,7 @@ img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    margin-bottom: 64px;
+    margin-bottom: 60px;
   }
 }
 
@@ -540,6 +533,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 18px;
 }
 
@@ -547,6 +542,10 @@ img {
   .socials-list {
     display: none;
   }
+}
+
+.socials-list__item {
+  padding-top: 4px;
 }
 
 .socials-list__item:not(:last-child) {
@@ -986,12 +985,6 @@ address {
 @media screen and (max-width: 767px) {
   .team-section__list-item:not(:last-child) {
     margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team-section__picture {
-    width: 354px;
   }
 }
 
