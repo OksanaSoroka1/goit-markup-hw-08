@@ -1328,7 +1328,7 @@ address {
   background-color: #2196f3;
   background-image: url(../../img/icon-check.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   -moz-background-origin: border-box;
   background-position: center;
 }
