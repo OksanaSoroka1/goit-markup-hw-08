@@ -1087,6 +1087,7 @@ address {
 .modal {
   position: absolute;
   padding: 40px;
+  overflow-y: auto;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1309,15 +1310,13 @@ address {
 }
 
 .form-request__checkbox-icon-thumb {
-  position: relative;
   width: 16px;
   height: 15px;
   margin-right: 7px;
   border: 2px solid #212121;
   border-radius: 2px;
-  fill: transparent;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-request__checkbox:focus ~ .form-request__checkbox-icon-thumb {
@@ -1327,13 +1326,11 @@ address {
 .form-request__checkbox:checked ~ .form-request__checkbox-icon-thumb {
   border-color: #2196f3;
   background-color: #2196f3;
-  fill: #ffffff;
-}
-
-.form-request__checkbox-icon {
-  position: absolute;
-  top: -2px;
-  left: -2px;
+  background-image: url(../../img/icon-check.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-origin: border-box;
+  background-position: center;
 }
 
 .form-request__button {
