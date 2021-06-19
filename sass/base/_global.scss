@@ -30,6 +30,11 @@ body {
   font-size: 14px;
   color: $primary-text-color;
   letter-spacing: 0.03em;
+
+  &.modal-open,
+  &.menu-open {
+    overflow: hidden;
+  }
 }
 
 //Оптимізує img

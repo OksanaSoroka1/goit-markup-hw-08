@@ -8,8 +8,8 @@
   background-size: cover;
   background-position: center;
 
-  @media screen and (max-width: 767px) {
-    max-width: 767px;
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
 
     background-image: linear-gradient($hero-bcg-gradient), url('../img/hero-bcg-480.jpg');
 
@@ -21,8 +21,8 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    max-width: 1199px;
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    max-width: 768px;
 
     background-image: linear-gradient($hero-bcg-gradient), url('../img/hero-bcg-768.jpg');
 
@@ -40,7 +40,7 @@
     padding-top: 118px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
