@@ -34,18 +34,7 @@
     }
   }
 
-  @media screen and (max-width: 1199px) {
-    height: 400px;
-    padding-bottom: 118px;
-    padding-top: 118px;
-  }
-
   @media screen and (min-width: 769px) {
-    max-width: 1600px;
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-
     background-image: linear-gradient($hero-bcg-gradient), url('../img/hero-bcg-1600.jpg');
 
     @media (min-device-pixel-ratio: 2),
@@ -54,6 +43,19 @@
       (min-resolution: 2dppx) {
       background-image: linear-gradient($hero-bcg-gradient), url('../img/hero-bcg-3200.jpg');
     }
+  }
+
+  @media screen and (max-width: 1199px) {
+    height: 400px;
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 

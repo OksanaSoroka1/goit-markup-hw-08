@@ -36,6 +36,8 @@
 
 //Оформлення меню
 .menu-container {
+  display: flex;
+
   @media screen and (max-width: 767px) {
     display: none;
     position: fixed;
@@ -43,36 +45,19 @@
     top: 0;
     left: 0;
     width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    overflow: auto;
 
     background-color: $primary-bcg-color;
 
     &.is-open {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
-}
 
-.menu-container__content {
-  display: flex;
-
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    max-width: 450px;
-    height: 100vh;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 48px 25px;
-    overflow: auto;
-  }
-
-  /*@media screen and (max-width: 499px) {
-    padding: 10% 8%;
-  }
-  @media screen and (min-width: 500px) and (max-width: 767px) {
-    padding: 3% 2%;
-  }*/
   @media screen and (min-width: 768px) {
     align-items: center;
   }
@@ -88,7 +73,6 @@
 
 //Навігація по сайту
 
-
 .site-nav__list {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -96,11 +80,8 @@
 }
 
 .site-nav__list-item:not(:last-child) {
-  @media screen and (max-width: 499px) {
-    margin-bottom: 8%;
-  }
-  @media screen and (min-width: 500px) and (max-width: 767px) {
-    margin-bottom: 2%;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
   }
   @media screen and (min-width: 768px) {
     margin-right: 50px;
@@ -144,7 +125,6 @@
 
 //Авторизація
 
-
 .auth-nav {
   @media (max-width: 767px), (min-width: 1200px) {
     display: flex;
@@ -152,12 +132,7 @@
 
   @media screen and (max-width: 767px) {
     flex-direction: column-reverse;
-  }
-  @media screen and (max-width: 499px) {
-    margin-bottom: 16%;
-  }
-  @media screen and (min-width: 500px) and (max-width: 767px) {
-    margin-bottom: 4%;
+    margin-bottom: 64px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -203,21 +178,10 @@
   }
 }
 .tel-link {
-  @media screen and (max-width: 354px) {
-    font-size: 30px;
-  }
-  @media screen and (min-width: 355px) and (max-width: 767px) {
-    font-size: 34px;
-  }
-
   @media screen and (max-width: 767px) {
+    font-size: 34px;
+    margin-bottom: 32px;
     color: $accent-color;
-  }
-  @media screen and (max-width: 499px) {
-    margin-bottom: 8%;
-  }
-  @media screen and (min-width: 500px) and (max-width: 767px) {
-    margin-bottom: 2%;
   }
 }
 

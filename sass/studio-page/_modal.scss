@@ -9,14 +9,18 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(0.95);
+    @media screen and (min-width: 768px) {
+      transform: translate(-50%, -50%) scale(0.95);
+    }
+
+    @media screen and (max-width: 767px) {
+      transform: translateX(-50%) scale(0.95);
+    }
   }
 
   @media screen and (max-width: 479px) {
@@ -24,14 +28,20 @@
   }
 
   @media screen and (max-width: 767px) {
-    @media (orientation: landscape) {
-      transform: translate(-50%, -25%);
-    }
+    top: 10%;
+
+    transform: translateX(-50%) scale(1);
   }
 
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     min-width: 450px;
   }
+  @media screen and (min-width: 768px) {
+    top: 50%;
+
+    transform: translate(-50%, -50%) scale(1);
+  }
+
   @media screen and (min-width: 1200px) {
     width: 528px;
   }
